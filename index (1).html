@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Bansh Mandal — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="loader">
+  <div class="m-grid" id="mGrid"></div>
+  <div class="l-center">
+    <div class="l-mono">B<em>M</em></div>
+    <div class="l-name" id="lName"></div>
+    <div class="l-bar"><div class="l-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- SIDE NAVIGATION DOTS -->
+<div class="side-nav" id="sideNav">
+  <div class="sdot on" data-t="hero"><span class="sdot-lbl">Home</span></div>
+  <div class="sdot" data-t="about"><span class="sdot-lbl">About</span></div>
+  <div class="sdot" data-t="education"><span class="sdot-lbl">Education</span></div>
+  <div class="sdot" data-t="projects"><span class="sdot-lbl">Projects</span></div>
+  <div class="sdot" data-t="skills"><span class="sdot-lbl">Skills</span></div>
+  <div class="sdot" data-t="contact"><span class="sdot-lbl">Contact</span></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <a class="nav-logo" id="navLogo">B<em>M</em></a>
+  <div class="nav-links">
+    <a data-section="about"     class="nav-a">Objective</a>
+    <a data-section="education" class="nav-a">Education</a>
+    <a data-section="skills"    class="nav-a">Skills</a>
+    <a data-section="projects"  class="nav-a">Ventures</a>
+    <a data-section="contact"   class="nav-a">Contact</a>
+  </div>
+  <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer" id="drawer">
+  <a data-section="about"     class="nav-da">Objective</a>
+  <a data-section="education" class="nav-da">Education</a>
+  <a data-section="skills"    class="nav-da">Skills</a>
+  <a data-section="projects"  class="nav-da">Ventures</a>
+  <a data-section="contact"   class="nav-da">Contact</a>
+</div>
+
+<!-- ════════════════════
+     HERO
+════════════════════ -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-leak"></div>
+  <div class="hero-stripe"></div>
+  <div class="h-bg-num">BM</div>
+
+  <div class="hero-content">
+    <div class="h-eyebrow">01 — The Student</div>
+    <h1 class="hero-title">
+      BANSH<br>
+      <span class="outline">MAN</span><span class="blue">DAL</span>
+    </h1>
+    <p class="hero-sub">Digital Business &nbsp;·&nbsp; Data Science &nbsp;·&nbsp; Entrepreneurship</p>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="hero-motto">
+      <div class="motto-line"></div>
+      <p class="motto-quote">"The best thing about the future is that it comes one day at a time."</p>
+      <div class="motto-author">Abraham Lincoln</div>
+    </div>
+    <div class="h-scroll">
+      <span>Scroll</span>
+      <div class="h-scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE TICKER -->
+<div class="marquee">
+  <div class="marquee-t">
+    <span class="marquee-i">Digital Business</span><span class="marquee-i">Data Science</span>
+    <span class="marquee-i">Entrepreneurship</span><span class="marquee-i">Python</span>
+    <span class="marquee-i">IIM Bangalore</span><span class="marquee-i">Kolkata</span>
+    <span class="marquee-i">Innovation</span><span class="marquee-i">Business Strategy</span>
+    <span class="marquee-i">Digital Business</span><span class="marquee-i">Data Science</span>
+    <span class="marquee-i">Entrepreneurship</span><span class="marquee-i">Python</span>
+    <span class="marquee-i">IIM Bangalore</span><span class="marquee-i">Kolkata</span>
+    <span class="marquee-i">Innovation</span><span class="marquee-i">Business Strategy</span>
+  </div>
+</div>
+
+<!-- ════════════════════
+     ABOUT / OBJECTIVE
+════════════════════ -->
+<section id="about" class="sec s-dark">
+  <div class="inner">
+    <div class="eyebrow rev d1">01 — Professional Summary</div>
+    <h2 class="sec-title rev d2">THE<br>STUDENT</h2>
+    <div class="about-grid">
+      <div class="about-text rev-l">
+        <p>Highly motivated first-year student pursuing a <strong>BBA in Digital Business and Entrepreneurship</strong> at IIM Bangalore.</p>
+        <p>Passionate about leveraging technology, data analytics, and entrepreneurial principles to build innovative solutions. Demonstrated ability to execute lean business models with a strong foundation in programming and business management.</p>
+        <p>Seeking to apply analytical thinking, adaptability, and technical skills to real-world challenges — bridging the gap between code and commerce.</p>
+        <div class="cpills">
+          <a href="mailto:banshmandal@example.com" class="cpill">✉ &nbsp;banshmandal@example.com</a>
+          <span class="cpill">📍 &nbsp;Kolkata, West Bengal</span>
+          <a href="https://www.linkedin.com/in/bansh-mandal-40b99137a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="cpill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            &nbsp;LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="stats-g rev-r">
+        <div class="stat-b d1"><span class="stat-n" data-count="2">0</span><span class="stat-l">Degrees<br>Pursuing</span></div>
+        <div class="stat-b d2"><span class="stat-n">1st</span><span class="stat-l">Year<br>Student</span></div>
+        <div class="stat-b d3"><span class="stat-n" data-count="11">0</span><span class="stat-l">Technical<br>Skills</span></div>
+        <div class="stat-b d4"><span class="stat-n">₹250</span><span class="stat-l">Venture<br>Budget</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════
+     EDUCATION
+════════════════════ -->
+<section id="education" class="sec s-black">
+  <div class="inner">
+    <div class="eyebrow rev d1">02 — Education</div>
+    <h2 class="sec-title rev d2">ACADEMIC<br>JOURNEY</h2>
+    <div class="edu-grid">
+      <div class="edu-cube rev d1">
+        <div class="edu-n">10</div>
+        <div class="edu-badge">CBSE · Class X</div>
+        <h3>Secondary School Certificate</h3>
+        <p class="edu-inst">Central Board of Secondary Education · Board Examination</p>
+      </div>
+      <div class="edu-cube rev d2">
+        <div class="edu-n">12</div>
+        <div class="edu-badge">CBSE · Class XII</div>
+        <h3>Higher Secondary Certificate</h3>
+        <p class="edu-inst">Central Board of Secondary Education · Board Examination</p>
+      </div>
+      <div class="edu-cube rev d3">
+        <div class="edu-n">UG</div>
+        <div class="edu-badge">Current · 1st Year</div>
+        <h3>BBA in Digital Business &amp; Entrepreneurship</h3>
+        <p class="edu-inst">Indian Institute of Management (IIM) Bangalore</p>
+      </div>
+      <div class="edu-cube rev d4">
+        <div class="edu-n">UG</div>
+        <div class="edu-badge">Current · 1st Year</div>
+        <h3>B.Tech in Computer Science &amp; Data Science</h3>
+        <p class="edu-inst">HIT University · Dual Degree Program</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE BAND -->
+<div class="qband rev">
+  <div class="q-inner">
+    <span class="q-mark">"</span>
+    <blockquote>
+      Code meets commerce.<br>
+      <em>Building the future, one idea at a time.</em>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ════════════════════
+     PROJECTS / VENTURES
+════════════════════ -->
+<section id="projects" class="sec s-dark">
+  <div class="inner">
+    <div class="eyebrow rev d1">03 — Academic Projects</div>
+    <h2 class="sec-title rev d2">VENTURES &amp;<br>PROJECTS</h2>
+    <div class="proj-item rev">
+      <div class="p-num">01</div>
+      <div>
+        <div class="p-tag">Entrepreneurship · Class Project · IIM Bangalore</div>
+        <div class="p-title">Micro-Venture Business Plan</div>
+        <p class="p-desc">Developed a complete entrepreneurial venture on a lean ₹250 budget. Sourced affordable nostalgic stationery and marketed in high-traffic college hotspots — real-world application of lean startup, market analysis, and grassroots sales strategy.</p>
+        <div class="p-chips">
+          <span class="p-chip">Lean Startup</span>
+          <span class="p-chip">Market Research</span>
+          <span class="p-chip">Supply Chain</span>
+          <span class="p-chip">Campus Marketing</span>
+          <span class="p-chip">Revenue Modelling</span>
+          <span class="p-chip">Customer Acquisition</span>
+        </div>
+      </div>
+      <div class="p-meta">
+        <span class="p-budget">₹250</span>
+        <span class="p-blabel">Budget</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════
+     SKILLS
+════════════════════ -->
+<section id="skills" class="sec s-charcoal">
+  <div class="inner">
+    <div class="eyebrow rev d1">04 — Skills</div>
+    <h2 class="sec-title rev d2">ARSENAL OF<br>ABILITIES</h2>
+    <div class="skills-g">
+      <div class="rev-l">
+        <div class="sg-title">Hard Skills</div>
+        <div>
+          <div class="skill-row d1 rev"><span class="s-name">Python</span><span class="s-dot"></span></div>
+          <div class="skill-row d2 rev"><span class="s-name">C Programming</span><span class="s-dot"></span></div>
+          <div class="skill-row d3 rev"><span class="s-name">C++ Basics</span><span class="s-dot"></span></div>
+          <div class="skill-row d4 rev"><span class="s-name">RDBMS &amp; MySQL</span><span class="s-dot"></span></div>
+          <div class="skill-row d5 rev"><span class="s-name">Data Science</span><span class="s-dot"></span></div>
+          <div class="skill-row d6 rev"><span class="s-name">MS Office Suite &amp; Notion</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Business Planning</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Microfinance</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Social Entrepreneurship</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Neonatal Assessment</span><span class="s-dot"></span></div>
+        </div>
+      </div>
+      <div class="rev-r">
+        <div class="sg-title">Soft Skills</div>
+        <div>
+          <div class="skill-row d1 rev"><span class="s-name">Analytical Thinking</span><span class="s-dot"></span></div>
+          <div class="skill-row d2 rev"><span class="s-name">Problem-Solving</span><span class="s-dot"></span></div>
+          <div class="skill-row d3 rev"><span class="s-name">Communication</span><span class="s-dot"></span></div>
+          <div class="skill-row d4 rev"><span class="s-name">Team Collaboration</span><span class="s-dot"></span></div>
+          <div class="skill-row d5 rev"><span class="s-name">Time Management</span><span class="s-dot"></span></div>
+          <div class="skill-row d6 rev"><span class="s-name">Adaptability</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Critical Thinking</span><span class="s-dot"></span></div>
+          <div class="skill-row rev"><span class="s-name">Administrative Support</span><span class="s-dot"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════
+     CONTACT
+════════════════════ -->
+<section id="contact" class="contact-sec">
+  <div class="c-grid">
+    <div class="rev-l">
+      <div class="eyebrow" style="margin-bottom:26px;">05 — Contact</div>
+      <div class="c-big">LET'S<br><span>CONNECT</span></div>
+      <a href="mailto:banshmandal@example.com" class="c-link">
+        banshmandal@example.com
+        <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 4h12M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/bansh-mandal-40b99137a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="c-link">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        linkedin.com/in/bansh-mandal
+        <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 4h12M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+    <div class="c-rows rev-r">
+      <div class="c-row d1"><span class="c-label">Location</span><span class="c-val">Kolkata, West Bengal, India</span></div>
+      <div class="c-row d2"><span class="c-label">Status</span><span class="c-val">1st Year BBA Student</span></div>
+      <div class="c-row d3"><span class="c-label">Institution</span><span class="c-val">IIM Bangalore</span></div>
+      <div class="c-row d4"><span class="c-label">Degree</span><span class="c-val">BBA Digital Business &amp; Entrepreneurship</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a class="ft-logo" id="ftLogo">B<em>M</em></a>
+  <p>© 2026 Bansh Mandal. All Rights Reserved.</p>
+  <nav class="ft-links">
+    <a data-section="about">About</a>
+    <a data-section="education">Education</a>
+    <a data-section="projects">Projects</a>
+    <a data-section="skills">Skills</a>
+    <a data-section="contact">Contact</a>
+  </nav>
+</footer>
+
+<script>
+/* ══════════════════════════════════════════
+   PRELOADER
+══════════════════════════════════════════ */
+(function(){
+  var loader = document.getElementById('loader');
+  var grid   = document.getElementById('mGrid');
+  var nameEl = document.getElementById('lName');
+  var W = window.innerWidth;
+  var COLS = W < 600 ? 8 : W < 1000 ? 12 : 20;
+  var ROWS = W < 600 ? 12 : W < 1000 ? 10 : 8;
+  loader.style.setProperty('--c', COLS);
+  loader.style.setProperty('--r', ROWS);
+  'BANSH MANDAL'.split('').forEach(function(ch, i){
+    var s = document.createElement('span');
+    s.innerHTML = ch === ' ' ? '&nbsp;' : ch;
+    s.style.animationDelay = (1.05 + i * 0.045) + 's';
+    nameEl.appendChild(s);
+  });
+  var total = COLS * ROWS, tiles = [];
+  for(var i = 0; i < total; i++){
+    var t = document.createElement('div');
+    t.className = 'm-tile'; t.style.opacity = '0'; t.style.transform = 'scale(0)';
+    grid.appendChild(t); tiles.push(t);
+  }
+  tiles.forEach(function(tile, i){
+    var col = i % COLS, row = Math.floor(i / COLS);
+    setTimeout(function(){
+      tile.style.transition = 'transform .38s cubic-bezier(.2,.8,.2,1),opacity .38s ease,background .25s ease';
+      tile.style.opacity = '1'; tile.style.transform = 'scale(1)';
+      if(Math.random() < 0.18){ tile.style.background = '#1a6fff'; setTimeout(function(){ tile.style.background = ''; }, 260 + Math.random()*200); }
+    }, (col + row) * 16);
+  });
+  var sp = (COLS + ROWS) * 16 + 180;
+  setTimeout(function(){
+    tiles.slice().sort(function(){ return Math.random()-.5; }).slice(0, Math.floor(total * 0.22)).forEach(function(t, i){
+      setTimeout(function(){ t.style.background = '#1a6fff'; setTimeout(function(){ t.style.background = ''; }, 160); }, i * 18);
+    });
+  }, sp);
+  var ex = sp + 580;
+  setTimeout(function(){
+    tiles.forEach(function(tile, i){
+      var dx = (i % COLS) - COLS/2, dy = Math.floor(i / COLS) - ROWS/2;
+      var dist = Math.sqrt(dx*dx + dy*dy), angle = Math.atan2(dy, dx);
+      setTimeout(function(){
+        tile.style.transition = 'transform .48s cubic-bezier(.77,0,.18,1),opacity .45s ease';
+        tile.style.transform  = 'translate('+Math.cos(angle)*130+'px,'+Math.sin(angle)*130+'px) scale(0)';
+        tile.style.opacity    = '0';
+      }, dist * 26);
+    });
+    var maxD = Math.sqrt(Math.pow(COLS/2,2) + Math.pow(ROWS/2,2));
+    setTimeout(function(){
+      loader.style.display = 'none';
+      var bg = document.getElementById('heroBg');
+      if(bg) bg.classList.add('loaded');
+    }, maxD * 26 + 520);
+  }, ex);
+})();
+
+/* ══════════════════════════════════════════
+   NAV SCROLL SHADOW
+══════════════════════════════════════════ */
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function(){
+  nav.classList.toggle('scrolled', window.scrollY > 55);
+});
+
+/* ══════════════════════════════════════════
+   SCROLL TO SECTION
+══════════════════════════════════════════ */
+function scrollToSection(id){
+  var target = document.getElementById(id);
+  if(!target) return;
+  var navH = nav ? nav.offsetHeight : 62;
+  var top  = target.getBoundingClientRect().top + window.scrollY - navH;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+
+/* Desktop nav */
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click', function(){ var id = a.dataset.section; if(id) scrollToSection(id); });
+});
+
+/* BM logo */
+var logo = document.getElementById('navLogo');
+if(logo){ logo.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); }); }
+
+/* Mobile burger */
+var burger = document.getElementById('burger');
+var drawer = document.getElementById('drawer');
+burger.addEventListener('click', function(){ drawer.classList.toggle('open'); burger.classList.toggle('open'); });
+document.querySelectorAll('.nav-drawer a').forEach(function(a){
+  a.addEventListener('click', function(){
+    var id = a.dataset.section; if(id) scrollToSection(id);
+    drawer.classList.remove('open'); burger.classList.remove('open');
+  });
+});
+
+/* Footer logo */
+var ftLogo = document.getElementById('ftLogo');
+if(ftLogo){ ftLogo.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); }); }
+
+/* Footer links */
+document.querySelectorAll('.ft-links a').forEach(function(a){
+  a.addEventListener('click', function(){ var id = a.dataset.section; if(id) scrollToSection(id); });
+});
+
+/* Side dots */
+document.querySelectorAll('.sdot').forEach(function(d){
+  d.addEventListener('click', function(){ scrollToSection(d.dataset.t); });
+});
+
+/* ══════════════════════════════════════════
+   ACTIVE NAV HIGHLIGHT
+══════════════════════════════════════════ */
+function setActive(id){
+  document.querySelectorAll('.nav-links a').forEach(function(a){ a.classList.toggle('active', a.dataset.section === id); });
+  document.querySelectorAll('.nav-drawer a').forEach(function(a){ a.classList.toggle('active', a.dataset.section === id); });
+  document.querySelectorAll('.sdot').forEach(function(d){ d.classList.toggle('on', d.dataset.t === id); });
+}
+var secObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting) setActive(e.target.id); });
+}, { threshold: 0, rootMargin: '-5% 0px -70% 0px' });
+['hero','about','education','projects','skills','contact'].forEach(function(id){
+  var el = document.getElementById(id); if(el) secObs.observe(el);
+});
+setActive('hero');
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════ */
+var revObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); revObs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.rev,.rev-l,.rev-r').forEach(function(el){ revObs.observe(el); });
+
+/* ══════════════════════════════════════════
+   COUNTER ANIMATION
+══════════════════════════════════════════ */
+var cntObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var el = e.target, target = +el.dataset.count, v = 0;
+    (function step(){ v += Math.ceil(target/28); if(v >= target){ el.textContent = target; return; } el.textContent = v; requestAnimationFrame(step); })();
+    cntObs.unobserve(el);
+  });
+}, { threshold: .5 });
+document.querySelectorAll('[data-count]').forEach(function(el){ cntObs.observe(el); });
+</script>
+</body>
+</html>
